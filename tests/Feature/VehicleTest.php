@@ -92,6 +92,6 @@ class VehicleTest extends TestCase
         $this->assertDatabaseMissing('vehicles', [
             'id' => $vehicle->id,
             'deleted_at' => NULL
-        ])->assertDatabaseCount('vehicles', 0); // we have SoftDeletes, remember?
+        ])->assertDatabaseCount('vehicles', 0);
     }
 }
